@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    color: #000;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 1rem 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+header a img {
+    width: 80px;
+    display: block;
+}
+
+nav {
+    background-color: #ccc;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f00;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+tbody td img {
+    display: block;
+    margin: 10px 0;
+    max-width: 450px;
+}
+
+th {
+    background: #c2c2c2;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background: #efefef;
+}
+
+tr:hover {
+    background: #eeeeee;
+}
+
+p {
+    margin: .5rem 0;
+
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.margin-b-1 {
+    margin-bottom: 1rem;
+}
+
+.margin-b-2 {
+    margin-bottom: 2rem;
+}
+
+.margin-t-1 {
+    margin-top: 1rem;
+}
+
+.margin-t-2 {
+    margin-top: 2rem;
+}

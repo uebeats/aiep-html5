@@ -1,320 +1,343 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+<!-- Te gusta la tecnología y el desarrollo web a nosotros también.
+        Este es un trabajo para la actividad sumativa del 
+        Taller de Aplicaciones para Internet en AIEP -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periódico "El Faro"</title>
+    <title>El Faro</title>
+    <!-- Fuentes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/estilos.css">
+    <!-- Estilos de Framework UI Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./assets/css/app.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <a href="index.html">
-                <img src="https://cdn-icons-png.flaticon.com/512/2439/2439879.png" alt="logo">
-                <h1>Periódico "El Faro"</h1>
-                <p>El periódico de la región</p>
-            </a>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-light">Nosotros</h4>
+                        <p class="text-light">En El Faro, nos dedicamos al periodismo de calidad y a la
+                            integridad informativa. Somos tu fuente confiable de noticias precisas y análisis profundos,
+                            comprometidos con iluminar la verdad en un mundo lleno de información.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-light">Contacto</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Síguenos en X</a></li>
+                            <li><a href="#" class="text-white">Danos Like en Facebook</a></li>
+                            <li><a href="mailto:elfaro@elfaro.com" class="text-white">Escríbenos un Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#deportes">Deportes</a></li>
-                    <li><a href="#negocios">Negocios</a></li>
-                </ul>
-            </nav>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <svg width="23" viewBox="0 0 12 24" class="isotipo" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.56561 0L3.10432 1.14669V2.15157H3.43875V4.62954H2.9744V4.28334H2.53536V5.72554H3.17508L1.8595 21.4757H0V23.0188H11.1313V21.4757H9.27171L7.95613 5.72554H8.59586V4.28334H8.15675V4.62954H7.69247V2.15157H8.02689V1.14669L5.56561 0ZM3.82525 2.18638H7.30603V4.65932H3.82525V2.18638ZM6.4909 17.5536H7.89056V21.2976H6.4909V17.5536Z" />
+                    </svg>
+                    <span class="logotipo">El Faro</span>
+                </a>
+                <button type="button" class="btn btn-primary ms-auto me-2" data-bs-toggle="modal"
+                    data-bs-target="#addNews">Añadir noticia</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
-        <section id="inicio">
-            <div class="container margin-b-1 margin-t-1">
-                <h2>Noticias</h2>
-                <p>Las noticias son una forma de mantenerse informado sobre lo que está sucediendo en el mundo.</p>
+
+        <section class="py-5 text-center container portada">
+            <div class="row py-lg-5">
+                <div class="col-lg-10 col-md-8 mx-auto">
+                    <h1 class="fw-bold">
+                        ¡Tu nueva brújula informativa!
+                    </h1>
+                    <p class="lead text-body-secondary">En un océano de datos y noticias, nuestro compromiso es guiarte
+                        hacia la verdad con reportajes profundos, análisis objetivos y una cobertura confiable y
+                        actualizada. Navega con nosotros y mantente informado sobre los eventos más importantes, tanto
+                        locales como globales. <br> ¡Con <strong>El Faro</strong>, iluminamos el camino hacia la
+                        información que importa!
+                    </p>
+                    <div class="show-hora d-flex flex-row gap-1 justify-content-center">
+                        <div id="DiaSemana"></div>
+                        <div id="Dia"></div>
+                        <div id="Mes"></div>
+                        <div id="Year"></div>
+                        -
+                        <div id="Horas"></div>:
+                        <div id="Minutos"></div>:
+                        <div id="Segundos"></div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <div class="album py-5 bg-body-tertiary">
             <div class="container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Título</th>
-                            <th>Categoría</th>
-                            <th>Texto noticia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2024/03/29/codelco-en-numeros-rojos-cuprifera-cerro-2023-con-perdidas-netas-por-mas-de-us500-millones.shtml"
-                                    target="_blank" rel="noopener">
-                                    Codelco en números rojos: cuprífera cerró 2023 con pérdidas netas por más de US$500
-                                    millones
-                                </a>
-                            </td>
-                            <td>
-                                Noticias
-                            </td>
-                            <td>
-                                <p>Este jueves Codelco informó sus resultados al cierre de 2023, reportando una cifra
-                                    alarmante: la cuprífera tuvo pérdidas netas por 591 millones de dólares,
-                                    representando
-                                    una caída de 263% con respecto al año anterior.</p>
+                <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <h2>Noticias</h2>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="tag-categoria">
+                                <span class="badge bg-primary">Internacional</span>
+                            </div>
+                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330095152.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Mayor del Ejército chileno resulta lesionada en incidente que
+                                    afectó a una patrulla de observadores de la ONU en Líbano</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
+                                    </div>
+                                    <small class="text-body-secondary">08/04/2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="tag-categoria">
+                                <span class="badge bg-warning">Nacional</span>
+                            </div>
+                            <img src="https://images2-mega.cdn.mdstrm.com/meganoticias/2024/03/30/_443739_2_660806218595b.jpg?d=610x610"
+                                alt="" class="img-fluid">
+                            <div class="card-body">
+                                <p class="card-text">Saquean camión que volcó en región de Coquimbo mientras conductor
+                                    fallecido seguía en el interior del vehículo</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
+                                    </div>
+                                    <small class="text-body-secondary">15/04/2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="tag-categoria">
+                                <span class="badge bg-primary">Internacional</span>
+                            </div>
+                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330110316.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">"Intolerable atropello a la dignidad de la Presidencia":
+                                    Indignación en gobierno peruano tras allanamiento en casa de Boluarte</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
+                                    </div>
+                                    <small class="text-body-secondary">19/04/2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                <p>Esta baja se debe -según la compañía- principalmente por el alza de los costos y el
-                                    10%
-                                    que se obtenía de las ventas mediante la Ley Reservada del Cobre.</p>
-
-                                <p>Además, la producción registró una caída de 8,4% respecto al año anterior, debido
-                                    -según
-                                    argumentaron- a distintas dificultades operativas en yacimientos, como el Teniente,
-                                    Chuquicamata, Rajo Inca, entre otros.
-                                    Por su parte, en el período, el Ebitda -las utilidades antes de impuestos, intereses
-                                    y
-                                    depreciación- alcanzó los US$4.184 millones, loque representa una caída de 26%
-                                    respecto
-                                    a 2022. Lo anterior, evidencia una pérdida de 1.472 millones de dólares desde 2022 a
-                                    2023.</p>
-                                <img src="https://media.biobiochile.cl/wp-content/uploads/2024/03/codelco-2.png"
-                                    alt="El Faro">
-
-                                <audio controls>
-                                    <source
-                                        src="https://media.biobiochile.cl/wp-content/uploads/2024/03/despacho-bio-marcos-melio-mp3cut-net_.mp3"
-                                        type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://www.biobiochile.cl/noticias/internacional/eeuu/2024/03/28/barco-que-choco-con-el-puente-en-baltimore-tiene-toneladas-de-quimicos-peligrosos.shtml"
-                                    target="_blank" rel="noopener">
-                                    Barco que chocó con el puente en Baltimore tiene toneladas de químicos peligrosos
-                                </a>
-                            </td>
-                            <td>
-                                Noticias
-                            </td>
-                            <td>
-                                <p>Las autoridades calculan que en los contenedores hay 764 toneladas de materiales corrosivos e inflamables, como baterías de iones de litio, detalló en una rueda de prensa Jennifer Homendy, presidenta de la Junta Nacional de Seguridad en el Transporte (NTSB, en inglés).</p>
-
-                                <p>A su vez, agregó que algunos de los contenedores se rompieron por el choque y que se encontró brillo en las aguas del río.</p>
-
-                                <p>Según Homendy, la zona ahora mismo es “peligrosa” por la cantidad de escombros y el mal clima, lo que imposibilita las inmersiones para que los equipos puedan verificar el estado de los contenedores que cayeron al agua.</p>
-                                <img src="https://media.biobiochile.cl/wp-content/uploads/2024/03/puente-baltimore-6.jpg"
-                                    alt="El Faro">
-
-                                <video width="320" height="240" controls>
-                                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                                    <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://www.biobiochile.cl/noticias/nacional/chile/2024/03/28/es-solo-un-fantasmita-servel-ironiza-con-miedo-de-oposicion-a-fraude-en-elecciones-de-dos-dias.shtml"
-                                    target="_blank" rel="noopener">
-                                    "Es sólo un fantasmita": Servel ironiza con miedo de oposición a fraude en elecciones de dos días
-                                </a>
-                            </td>
-                            <td>
-                                Noticias
-                            </td>
-                            <td>
-                                <p>El Servicio Electoral (Servel) ironizó, a través de redes sociales, respecto del miedo expresado por diferentes integrantes de la oposición que adelantaron un posible fraude electoral si las elecciones de octubre se realizan en dos días.</p>
-                                <p>La idea de realizar las votaciones municipales y regionales del 27 de octubre en dos jornadas, fue planteada por el propio Servel y respaldada por el Gobierno.</p>
-                                <p>
-                                    Cambio que se justifica, según el Servicio Electoral, en que se proyecta una demora promedio de 5 minutos por votante. Demora que se entiende por la amplia cantidad de cargos a elegir (alcalde, concejales, gobernador regional y consejeros regionales), así como la gran cantidad de que votantes que se esperan, por la existencia del voto obligatorio.
+                <div class="row pt-5 pb-1">
+                    <div class="col">
+                        <h2>Deportes</h2>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="tag-categoria">
+                                <span class="badge bg-primary">Internacional</span>
+                            </div>
+                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330104715.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">El golazo de Diego Valdés para el América en México</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
+                                    </div>
+                                    <small class="text-body-secondary">08/04/2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="tag-categoria">
+                                <span class="badge bg-warning">Panamericanos</span>
+                            </div>
+                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330093521.jpg" alt=""
+                                class="img-fluid">
+                            <div class="card-body">
+                                <p class="card-text">El mayor obstáculo del "legado" de los Panamericanos Santiago 2023
                                 </p>
-                                <img src="https://media.biobiochile.cl/wp-content/uploads/2024/03/servel.png"
-                                    alt="El Faro">
-                            </td>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
+                                    </div>
+                                    <small class="text-body-secondary">15/04/2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="tag-categoria">
+                                <span class="badge bg-primary">Colo Colo</span>
+                            </div>
+                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/29/file_20240329123744.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">La difícil situación que atraviesa Arturo Vidal: Cuánto ha jugado
+                                    desde su regreso a Colo Colo y la alarma que hay en el club</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
+                                    </div>
+                                    <small class="text-body-secondary">19/04/2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="row pt-5 pb-1">
+                    <div class="col">
+                        <h2>Negocios</h2>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="tag-categoria">
+                                <span class="badge bg-primary">Bolsa de Santiago</span>
+                            </div>
+                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/28/file_20240328174620.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Bolsa de Santiago cierra un brillante primer trimestre y supera por
+                                    primera vez los 6.600 puntos</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
+                                    </div>
+                                    <small class="text-body-secondary">08/04/2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="tag-categoria">
+                                <span class="badge bg-warning">Dolar</span>
+                            </div>
+                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/28/file_20240328142432.jpg" alt=""
+                                class="img-fluid">
+                            <div class="card-body">
+                                <p class="card-text">Cierre semanal del dólar: Revisa en cuánto terminó y qué produjo
+                                    sus movimientos</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
+                                    </div>
+                                    <small class="text-body-secondary">15/04/2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="tag-categoria">
+                                <span class="badge bg-primary">Interlocking</span>
+                            </div>
+                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/28/file_20240328134903.jpg" alt="">
+                            <div class="card-body">
+                                <p class="card-text">"Interlocking": La prohibición que habrían incumplido Juan Hurtado,
+                                    Consorcio y LarrainVial</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
+                                    </div>
+                                    <small class="text-body-secondary">19/04/2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section id="deportes">
-            <div class="container margin-b-1 margin-t-1">
-                <h2>Deportes</h2>
-                <p>El deporte es una actividad que se realiza con el objetivo de mantenerse en forma y divertirse.</p>
-            </div>
-            <div class="container">
-                <table class="">
-                    <thead>
-                        <tr>
-                            <th>Título</th>
-                            <th>Categoría</th>
-                            <th>Texto noticia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                        <tr>
-                            <td>
-                                <a href="https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2024/03/28/iquique-goleo-a-ohiggins-en-rancagua-y-se-tomo-el-liderato-del-campeonato-nacional.shtml"
-                                    target="_blank" rel="noopener">
-                                    Iquique goleó a O'Higgins en Rancagua y se tomó el liderato del Campeonato Nacional
-                                </a>
-                            </td>
-                            <td>
-                                Deportes
-                            </td>
-                            <td>
-                                <p>El Dragón no decae. Deportes Iquique venció este jueves a O’Higgins, en Rancagua, y subió a la cima del Campeonato Nacional.</p>
+        </div>
 
-                                <p>El conjunto nortino jugó un partido casi perfecto y acabó imponiéndose por 3-0. Contundente.</p>
-
-                                <p>Iquique, recién ascendido, hizo gala de su peligroso tridente ofensivo una vez más para sumar otro triunfo: Edson Puch, Stefan Pino y Rubén Farfán.</p>
-                                <img src="https://media.biobiochile.cl/wp-content/uploads/2024/03/ohiggins-deportes-iquique-campeonato-nacional.jpg"
-                                    alt="El Faro">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://redgol.cl/chile/arturo-vidal-marcelo-diaz-colo-colo-la-u-campeonato-nacional"
-                                    target="_blank" rel="noopener">
-                                    Afirman que en Colo Colo están muy preocupados por real estado de Arturo Vidal: "Está con problemas"
-                                </a>
-                            </td>
-                            <td>
-                                Deportes
-                            </td>
-                            <td>
-                                <p>Arturo Vidal, volante de Colo Colo, no ha tenido el protagonismo que se esperaba luego de su regreso al 'Cacique'.</p>
-
-                                <p>Las lesiones le han jugado una mala pasada al ex Athletico Paranaense, quien ha quedado al margen de varios duelos del equipo dirigido por Jorge Almirón en el arranque del año.</p>
-
-                                <p>De hecho, el ‘King’ se perderá el encuentro de este fin de semana ante Everton por el Campeonato Nacional, ya que lo estarían cuidando para el arranque de la fase de grupos de Copa Libertadores.</p>
-                                <img src="https://media.biobiochile.cl/wp-content/uploads/2024/03/afirman-que-arturo-vidal-ha-escondido-lesion-y-alarma-a-colo-colo-750x400.jpg"
-                                    alt="El Faro">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://www.biobiochile.cl/especial/bio-bio-tuercas/noticias/2024/03/29/charles-leclerc-comenta-arribo-lewis-hamilton-a-ferrari.shtml"
-                                    target="_blank" rel="noopener">
-                                    El aviso de Charles Leclerc a Hamilton antes de que arribe a Ferrari: "Me lo tomo como un reto"
-                                </a>
-                            </td>
-                            <td>
-                                Deportes
-                            </td>
-                            <td>
-                                <p>El piloto monegasco Charles Leclerc se ha referido a lo que será el arribo de Lewis Hamilton a Ferrari, con quien compartirá equipo a partir de 2025.</p>
-
-                                <p>El británico sucederá al español Carlos Sainz en la 'Scudería', en lo que fue un bombástico movimiento en la previa del arranque de la temporada 2024.</p>
-
-                                <p>Si bien Leclerc ya había comentado positivamente el fichaje del siete veces campeón de la Fórmula 1, esta vez profundizó sobre su admiración por el hoy piloto de Mercedes.</p>
-
-                                <img src="https://media.biobiochile.cl/wp-content/uploads/2024/03/charles-leclerc-comenta-arribo-lewis-hamilton-a-ferrari.jpg"
-                                    alt="El Faro">
-                            </td>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <section id="negocios">
-            <div class="container margin-b-1 margin-t-1">
-                <h2>Negocios</h2>
-                <p>Los negocios son una actividad que se realiza con el objetivo de obtener beneficios económicos.</p>
-            </div>
-            <div class="container">
-                <table class="">
-                    <thead>
-                        <tr>
-                            <th>Título</th>
-                            <th>Categoría</th>
-                            <th>Texto noticia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="https://www.biobiochile.cl/noticias/nacional/region-de-los-rios/2024/03/25/sence-capacitara-a-280-mujeres-emprendedoras-en-la-region-de-los-rios.shtml"
-                                    target="_blank" rel="noopener">
-                                    Sence capacitará a 280 mujeres emprendedoras en la región de Los Ríos
-                                </a>
-                            </td>
-                            <td>
-                                Negocios / Emprendimiento
-                            </td>
-                            <td>
-                                <p>280 mujeres emprendedoras de la Región de Los Ríos busca capacitar el Sence, para el desarrollo de proyectos y formalización de estas iniciativas.</p>
-
-                                <p>El curso se denomina “Gestionando y formalizando mi emprendimiento”, cuya inversión pública es de 275 millones de pesos, el cual entrega elementos básicos para gestionar y hacer crecer un negocio, con contenidos iniciales de marketing, contabilidad y uso de redes sociales.</p>
-
-                                <p>Así mismo, en asesorías para el inicio de actividades ante el Servicio de Impuestos Internos, técnicas de ventas y asesoría en la obtención de la patente comercial en los municipios entre otros, como lo indicó el director regional subrogante del SENCE, Erik Arcos.</p>
-
-                                <img src="https://media.biobiochile.cl/wp-content/uploads/2024/03/erik-10.png"
-                                    alt="El Faro">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://www.biobiochile.cl/noticias/economia/actualidad-economica/2024/03/27/las-ventas-del-comercio-minorista-se-recuperan-en-la-region-metropolitana-y-suben-en-enero-y-febrero.shtml"
-                                    target="_blank" rel="noopener">
-                                    Las ventas del comercio minorista se recuperan en la región Metropolitana y suben en enero y febrero
-                                </a>
-                            </td>
-                            <td>
-                                Negocios / Emprendimiento
-                            </td>
-                            <td>
-                                <p>Las ventas del comercio minorista en la región Metropolitana marcaron una recuperación en los dos primeros meses del año, según las últimas cifras informadas por la Cámara Nacional de Comercio (CNC).</p>
-
-                                <p>Según el índice elaborado de forma mensual, las ventas presenciales minoristas en la capital marcaron un alza de 4,9% en enero y un 8,5% en febrero. De esta forma, se acumula un crecimiento del 6,7% durante los dos primeros meses del 2024.</p>
-
-                                <p>“Tras dieciocho meses de resultados negativos, las ventas presenciales del retail en la RM parten el 2024 con mejores resultados, reafirmando el cambio de tendencia que se viene evidenciando desde los últimos meses del año pasado, tras un 2023 que estuvo marcado por fuertes caídas en el comercio minorista”, destacó la gerente de Estudios de la CNC, Bernardita Silva.</p>
-
-                                <img src="https://media.biobiochile.cl/wp-content/uploads/2024/03/ventas-comercio-contexto.jpg"
-                                    alt="El Faro">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://www.biobiochile.cl/noticias/servicios/explicado/2024/03/28/cuales-seran-los-salares-que-seran-protegidos-de-la-extraccion-del-litio.shtml"
-                                    target="_blank" rel="noopener">
-                                    Cuáles serán los salares que serán protegidos de la extracción del litio
-                                </a>
-                            </td>
-                            <td>
-                                Negocios / Emprendimiento
-                            </td>
-                            <td>
-                                <p>Este martes, el Gobierno informó cuáles serán los salares que podrán ser explotados para la extracción de litio por empresas estatales y privadas, y cuáles quedarán protegidos mediante la creación de una red enfocada en su conservación.</p>
-
-                                <p>El anuncio se realizó a casi un año del lanzamiento de la Estrategia Nacional del Litio, donde se detallaron las condiciones sobre cómo se desarrollará esta industria.</p>
-
-                                <p>En ese sentido, se informó que el Estado tendrá participación mayoritaria de la extracción en 3 de ellos que representan el 49% de la superficie de salares chilenos.</p>
-
-                                <img src="https://media.biobiochile.cl/wp-content/uploads/2024/03/salares-litio.jpg"
-                                    alt="El Faro">
-                            </td>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
     </main>
+
+    <footer class="text-body-secondary py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                    href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para agregar noticias -->
+    <div class="modal fade" id="addNews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Noticia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Categorias</label>
+                            <select name="categoriaNoticia" id="categoriaNoticia" class="form-select">
+                                <option value="">Selecciona una categoria</option>
+                                <option value="noticias">Noticias</option>
+                                <option value="deportes">Deportes</option>
+                                <option value="negocios">Negocios</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Titular o nombre Noticia</label>
+                            <input type="text" name="titularNoticia" id="titularNoticia" class="form-control" placeholder="Aquí debes colocar el titular">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Cuerpo de la Noticia</label>
+                            <textarea name="cuerpoNoticia" id="cuerpoNoticia" cols="30" rows="5" class="form-control" placeholder="Aquí debes colocar el cuerpo de la noticia..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Crear Noticia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts de Bootstrap 5.3.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

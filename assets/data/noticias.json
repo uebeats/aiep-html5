@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "categoria": "Noticias",
+        "titulo": "Mayor del Ejército chileno resulta lesionada en incidente en Líbano",
+        "contenido": "El Ministerio de Defensa Nacional informó que este sábado 30 de marzo, aproximadamente a las 9.00 hora local de Líbano, en circunstancias que están siendo investigadas, se produjo un incidente que dejó con lesiones a una mayor del Ejército chileno, pero fuera de riesgo vital. A través de un comunicado, la cartera expuso que el hecho afectó a una patrulla de observadores de Naciones Unidas que prestaba apoyo a la misión UNIFIL (United Nations Interim Force In Lebanon). NOTICIAS RELACIONADAS Indagan presunto suicidio de oficial (r) del Ejército al costado de plaza Las Lilas de Providencia Formalizan por dos delitos a oficial del Ejército que protagonizó accidente de tránsito ebrio y retienen su licencia de conducir 128 En dicha patrulla se transportaba, junto a otros tres miembros de la misión de la ONU, la mayor del Ejército de Chile, Antonieta Durán Arriagada.",
+        "imagen": "https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330095152.jpg"
+    },
+    {
+        "id": "2",
+        "categoria": "Noticias",
+        "titulo": "Saquean camión que volcó en región de Coquimbo",
+        "contenido": "Personas saquearon un camión de paltas que volcó en la comuna de La Higuera, región de Coquimbo, mientras el conductor fallecido seguía en el interior del vehículo. El accidente vehicular sucedió cerca de las 19 horas de ayer, viernes 29 de marzo, en el kilómetro 509 de la ruta 5 norte. El chofer que las transportaba desde el norte al centro perdió el control y se volcó, cayendo toda la carga. El volcamiento del camión con paltas en La Higuera, de acuerdo al corresponsal en la región de Coquimbo, Rodrigo Chávez, el rescate del cuerpo por parte de Bomberos se hizo muy difícil, ya que la cabina estaba casi completamente destruida. Cerca de las diez de la noche, es decir, aproximadamente a tres horas Después de haber sucedido el accidente, ya no quedaba mercancía. Fue uno de los presentes en el lugar quien encontró el cuerpo del camionero atrapado entre diversos palets que utilizaba para la comercialización de las paltas.",
+        "imagen": "https://cooperativa.cl/noticias/site/artic/20240330/imag/foto_0000000120240330164019.png"
+    },
+    {
+        "id": "3",
+        "categoria": "Noticias",
+        "titulo": "Indignación en Perú tras allanamiento en casa de Boluarte",
+        "contenido": "El primer ministro de Perú, Gustavo Adrianzén, consideró un 'atropello a la dignidad' de la presidenta Dina Boluarte el allanamiento a su vivienda y la sede de gobierno, dentro de una investigación sobre relojes Rolex que la mandataria no habría declarado como parte de sus bienes. 'Lo que ha sucedido constituye un intolerable atropello a la dignidad de la Presidencia de la República y a la Nación que representa. Estas acciones son desproporcionadas e inconstitucionales', dijo Adrianzén el sábado a la radio y televisión RPP. En la madrugada la policía junto a la fiscalía allanaron la vivienda y la sede presidencial, en busca de las joyas de la mandataria. Desde el 18 de marzo, la presidenta peruana es investigada por presunto delito de enriquecimiento ilícito y omisión de consignar declaraciones en documentos públicos.",
+        "imagen": "https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330110316.jpg"
+    }
+]

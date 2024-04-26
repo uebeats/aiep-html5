@@ -1,0 +1,23 @@
+[
+    {
+        "id": "4",
+        "categoria": "Deportes",
+        "titulo": "El golazo de Diego Valdés para el América en México",
+        "contenido": "Con goles de Diego Valdés y el uruguayo Brian Rodríguez, el América venció 2-1 al Atlético San Luis en el estadio Azteca en partido de la decimotercera fecha del torneo Clausura 2024 del fútbol mexicano. Se jugaba el minuto 54 cuando el volante chileno convirtió el 1-0 para las 'Águilas' con un remate de primera al filo del área chica. Valdés regresó después de casi dos semanas. Se lesionó y quedó al margen de la gira de la selección por Europa, pues era uno de los convocados en primera instancia por Ricardo Gareca. Al 84, el América tejió una jugada en el último cuarto de la cancha que culminó con un disparo dentro del área que Brian Rodríguez colocó en el ángulo superior derecho. El marfileño Franck Boli anoto el 2-1 para el Atlético San Luis con un penalti cobrado al 90+5, sin tiempo para buscar cambiar el resultado. De esta manera, el América llegó a 28 puntos, segundo de la tabla, y el Atlético San Luis se quedó con 13 unidades.",
+        "imagen": "https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330104715.jpg"
+    },
+    {
+        "id": "5",
+        "categoria": "Deportes",
+        "titulo": "La difícil situación que atraviesa Arturo Vidal",
+        "contenido": "El fichaje de Arturo Vidal por Colo Colo marcó un hito significativo en el panorama reciente del fútbol chileno. No obstante, las preocupaciones sobre su condición física han generado varios contratiempos que han obstaculizado su participación en los compromisos durante este año 2024. En lo que va de temporada, el 'King' ha aparecido en seis de diez encuentros con el 'Cacique', registrando un total de 466 minutos disputados (de 899' que lleva Colo Colo), además de un gol.",
+        "imagen": "https://static.emol.cl/emol50/Fotos/2024/03/29/file_20240329123744.jpg"
+    },
+    {
+        "id": "6",
+        "categoria": "Deportes",
+        "titulo": "El mayor obstáculo del 'legado' de los Panamericanos Santiago 2023",
+        "contenido": "La transición del traspaso de la infraestructura de los Panamericanos Santiago 2023 no ha sido fácil. La burocracia ha sido el mayor obstáculo del 'legado'. Han existido problemas para la entrega de recintos e implementos luego de cuatro meses del gran evento. El atletismo lo vivió hace solos unos días con la organización del Gran Prix en el estadio Mario Recordón del Parque Estadio Nacional. 'Costó hacerlo. Se logró a pulso. No pensábamos que la entrega del recinto sería tan lenta. Operó la pura buena voluntad. La implementación estaba en una bodega en Lampa. Pusimos de la nuestra. El podio lo trajimos de Maipú', contó el presidente de la federación, Juan Luis Carter, a El Mercurio. La natación también sufrió ya con el tema. 'Todo debió ser más rápido. En el verano tuvimos que arrendar piscinas'.",
+        "imagen": "https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330093521.jpg"
+    }
+]

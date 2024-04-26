@@ -66,6 +66,20 @@ main .show-hora div {
     font-weight: bold;
 }
 
+main .card-text {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    overflow: hidden; /* Oculta el contenido que desborde */
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Número de líneas a mostrar */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; /* Agrega los puntos suspensivos */
+}
+
+main #destacados .card {
+    height: 220px;
+    min-height: 220px;
+}
+
 .parpadeo {
     animation-name: parpadeo;
     animation-duration: 1.5s;
@@ -120,5 +134,12 @@ main .show-hora div {
 
     100% {
         opacity: 1
+    }
+}
+
+/* Media queries mobile */
+@media (max-width: 440px) {
+    main #destacados .card {
+        height: auto;
     }
 }

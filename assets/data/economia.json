@@ -1,0 +1,23 @@
+[
+    {
+        "id": "7",
+        "categoria": "Negocios",
+        "titulo": "Bolsa de Santiago cierra un brillante primer trimestre",
+        "contenido": "Por tercera sesión consecutiva, el IPSA -principal indicador de la Bolsa de Comercio de Santiago- cerró en un máximo histórico; pero el de este viernes tuvo un condimento adicional, al superar por primera vez los 6.600 puntos. Lo que coincidió con el cierre del primer trimestre de 2024, dándole aún más luz al brillante arranque bursátil del año en el país. En específico, el IPSA culminó la sesión avanzando 0,69% hasta los 6.643,76 puntos. En la jornada, destacó el rendimiento Vapores (1,66%), seguido de Banco de Chile (1,58%) y Parque Arauco (1,48%). Para Jorge Tolosa, operador de renta variable de Vector Capital, el buen rendimiento de la bolsa local en los últimos días se explica, en buena medida, por las mejores perspectivas económicas que hay para Chile. 'Esa es un poco la razón del alza que hubo en los últimos días', sostuvo.",
+        "imagen": "https://static.emol.cl/emol50/Fotos/2024/03/28/file_20240328174620.jpg"
+    },
+    {
+        "id": "8",
+        "categoria": "Negocios",
+        "titulo": "Cierre semanal del dólar",
+        "contenido": "Una jornada sin grandes movimientos es la vivió el dólar este viernes en el mercado cambiario local, en medio del escaso flujo antes del feriado del Viernes Santo. Una sesión, además, que estuvo marcada por sólidas cifras sectoriales en Chile y un desempleo en el país que se ubicó bajo lo esperado en el trimestre móvil diciembre-febrero. Así, el billete verde cerró sus operaciones más líquidas anotando un leve avance de $0,8, terminando la semana en puntas de $980,8 vendedor y $980,5 comprador. Con esto, anotó un tímido retroceso semanal de $1,5. Giovanny Pino, estratega de mercados XTB Latam, destacó el repunte que registró la producción de cobre y al aumento en la producción manufacturera dentro del territorio nacional. 'Según cifras publicadas hoy por el INE, la producción del metal rojo aumentó un 9,9%, alcanzando las 420.242 toneladas en febrero.'",
+        "imagen": "https://static.emol.cl/emol50/Fotos/2024/03/28/file_20240328142432.jpg"
+    },
+    {
+        "id": "9",
+        "categoria": "Negocios",
+        "titulo": "'Interlocking': La prohibición que habrían incumplido Juan Hurtado",
+        "contenido": "La Fiscalía Nacional Económica (FNE) solicitó al Tribunal de Defensa de la Libre Competencia (TDLC) millonarias multas para Consorcio Financiero, LarrainVial y Juan Hurtado Vicuña ¿La razón? Se habría acreditado la existencia de la infracción denominada 'interlocking'. Lo anterior, hace referencia a la vinculación entre dos empresas competidoras que se produce cuando estas comparten, directa o indirectamente, personas en sus cargos ejecutivos relevantes o en su directorio. Y eso es lo que, a juicio de la FNE, ocurrió, por lo que pidió una sanción equivalente a US$4 millones. Según la fiscalía, se demuestra de forma clara que Hurtado Vicuña participó de forma simultánea en cargos altos dentro de Consorcio y LarrainVial.",
+        "imagen": "https://static.emol.cl/emol50/Fotos/2024/03/28/file_20240328134903.jpg"
+    }
+]

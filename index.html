@@ -54,7 +54,7 @@
                     <span class="logotipo">El Faro</span>
                 </a>
                 <button type="button" class="btn btn-primary ms-auto me-2" data-bs-toggle="modal"
-                    data-bs-target="#addNews">Añadir noticia</button>
+                    data-bs-target="#addNewsModal">Añadir noticia</button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -64,6 +64,12 @@
     </header>
 
     <main>
+
+        <section class="container">
+            <div class="row">
+                <div class="col"></div>
+            </div>
+        </section>
 
         <section class="py-5 text-center container portada">
             <div class="row py-lg-5">
@@ -92,194 +98,103 @@
         </section>
 
         <div class="album py-5 bg-body-tertiary">
-            <div class="container">
+            <div id="destacados" class="container">
                 <div class="row pt-3 pb-1">
+                    <div class="col">
+                        <h2>Destacados</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="tag-categoria">
+                                        <span class="badge bg-danger">
+                                            Noticias
+                                        </span>
+                                    </div>
+                                    <img src="https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330095152.jpg" class="img-fluid rounded-start" alt="Soldados">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mayor del Ejército chileno resulta lesionada en incidente en Líbano</h5>
+                                        <p class="card-text">El Ministerio de Defensa Nacional informó que este sábado 30 de marzo, aproximadamente a las 9.00 hora local de Líbano.
+                                        </p>
+                                        <p class="card-text"><small class="text-body-secondary">
+                                            Actualizado por ultima vez hace 3 minutos</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <div class="tag-categoria">
+                                    <span class="badge bg-danger">
+                                        Deportes
+                                    </span>
+                                </div>
+                                <img src="https://static.emol.cl/emol50/Fotos/2024/03/29/file_20240329123744.jpg" class="img-fluid rounded-start" alt="Arturo">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">La difícil situación que atraviesa Arturo Vidal</h5>
+                                  <p class="card-text">El fichaje de Arturo Vidal por Colo Colo marcó un hito significativo en el panorama reciente del fútbol chileno.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Actualizado por ultima vez hace 3 minutos</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row pt-5 pb-1">
                     <div class="col">
                         <h2>Noticias</h2>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="tag-categoria">
-                                <span class="badge bg-primary">Internacional</span>
-                            </div>
-                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330095152.jpg" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Mayor del Ejército chileno resulta lesionada en incidente que
-                                    afectó a una patrulla de observadores de la ONU en Líbano</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
-                                    </div>
-                                    <small class="text-body-secondary">08/04/2024</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="tag-categoria">
-                                <span class="badge bg-warning">Nacional</span>
-                            </div>
-                            <img src="https://images2-mega.cdn.mdstrm.com/meganoticias/2024/03/30/_443739_2_660806218595b.jpg?d=610x610"
-                                alt="" class="img-fluid">
-                            <div class="card-body">
-                                <p class="card-text">Saquean camión que volcó en región de Coquimbo mientras conductor
-                                    fallecido seguía en el interior del vehículo</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
-                                    </div>
-                                    <small class="text-body-secondary">15/04/2024</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="tag-categoria">
-                                <span class="badge bg-primary">Internacional</span>
-                            </div>
-                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330110316.jpg" alt="">
-                            <div class="card-body">
-                                <p class="card-text">"Intolerable atropello a la dignidad de la Presidencia":
-                                    Indignación en gobierno peruano tras allanamiento en casa de Boluarte</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
-                                    </div>
-                                    <small class="text-body-secondary">19/04/2024</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="noticias" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
 
                 <div class="row pt-5 pb-1">
                     <div class="col">
                         <h2>Deportes</h2>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="tag-categoria">
-                                <span class="badge bg-primary">Internacional</span>
-                            </div>
-                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330104715.jpg" alt="">
-                            <div class="card-body">
-                                <p class="card-text">El golazo de Diego Valdés para el América en México</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
-                                    </div>
-                                    <small class="text-body-secondary">08/04/2024</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="tag-categoria">
-                                <span class="badge bg-warning">Panamericanos</span>
-                            </div>
-                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/30/file_20240330093521.jpg" alt=""
-                                class="img-fluid">
-                            <div class="card-body">
-                                <p class="card-text">El mayor obstáculo del "legado" de los Panamericanos Santiago 2023
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
-                                    </div>
-                                    <small class="text-body-secondary">15/04/2024</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="tag-categoria">
-                                <span class="badge bg-primary">Colo Colo</span>
-                            </div>
-                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/29/file_20240329123744.jpg" alt="">
-                            <div class="card-body">
-                                <p class="card-text">La difícil situación que atraviesa Arturo Vidal: Cuánto ha jugado
-                                    desde su regreso a Colo Colo y la alarma que hay en el club</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
-                                    </div>
-                                    <small class="text-body-secondary">19/04/2024</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="deportes" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
 
                 <div class="row pt-5 pb-1">
                     <div class="col">
                         <h2>Negocios</h2>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="tag-categoria">
-                                <span class="badge bg-primary">Bolsa de Santiago</span>
-                            </div>
-                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/28/file_20240328174620.jpg" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Bolsa de Santiago cierra un brillante primer trimestre y supera por
-                                    primera vez los 6.600 puntos</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
-                                    </div>
-                                    <small class="text-body-secondary">08/04/2024</small>
-                                </div>
-                            </div>
-                        </div>
+                <div id="economia" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center py-5 px-4">
+            <div class="col-lg-4 col-12">
+                <h2>Formulario de Contacto</h2>
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" required>
                     </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="tag-categoria">
-                                <span class="badge bg-warning">Dolar</span>
-                            </div>
-                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/28/file_20240328142432.jpg" alt=""
-                                class="img-fluid">
-                            <div class="card-body">
-                                <p class="card-text">Cierre semanal del dólar: Revisa en cuánto terminó y qué produjo
-                                    sus movimientos</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
-                                    </div>
-                                    <small class="text-body-secondary">15/04/2024</small>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
                     </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <div class="tag-categoria">
-                                <span class="badge bg-primary">Interlocking</span>
-                            </div>
-                            <img src="https://static.emol.cl/emol50/Fotos/2024/03/28/file_20240328134903.jpg" alt="">
-                            <div class="card-body">
-                                <p class="card-text">"Interlocking": La prohibición que habrían incumplido Juan Hurtado,
-                                    Consorcio y LarrainVial</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Leer más</button>
-                                    </div>
-                                    <small class="text-body-secondary">19/04/2024</small>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="form-control"
+                            required></textarea>
                     </div>
-                </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
             </div>
         </div>
 
@@ -297,7 +212,7 @@
     </footer>
 
     <!-- Modal para agregar noticias -->
-    <div class="modal fade" id="addNews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="addNewsModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -307,31 +222,55 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Categorias</label>
-                            <select name="categoriaNoticia" id="categoriaNoticia" class="form-select">
-                                <option value="">Selecciona una categoria</option>
+                            <label for="categoriaNoticia" class="form-label">Categorias</label>
+                            <select name="categoriaNoticia" id="categoriaNoticia" class="form-select" required>
                                 <option value="noticias">Noticias</option>
                                 <option value="deportes">Deportes</option>
                                 <option value="negocios">Negocios</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Titular o nombre Noticia</label>
-                            <input type="text" name="titularNoticia" id="titularNoticia" class="form-control" placeholder="Aquí debes colocar el titular">
+                            <label for="titularNoticia" class="form-label">Titular o nombre Noticia</label>
+                            <input type="text" name="titularNoticia" id="titularNoticia" class="form-control"
+                                placeholder="Aquí debes colocar el titular">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Cuerpo de la Noticia</label>
-                            <textarea name="cuerpoNoticia" id="cuerpoNoticia" cols="30" rows="5" class="form-control" placeholder="Aquí debes colocar el cuerpo de la noticia..."></textarea>
+                            <label for="imagenNoticia" class="form-label">URL imagen de Noticia</label>
+                            <input type="text" name="imagenNoticia" id="imagenNoticia" class="form-control"
+                                placeholder="https://">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cuerpoNoticia" class="form-label">Cuerpo de la Noticia</label>
+                            <textarea name="cuerpoNoticia" id="cuerpoNoticia" cols="30" rows="5" class="form-control"
+                                placeholder="Aquí debes colocar el cuerpo de la noticia..."></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Crear Noticia</button>
+                    <button type="button" class="btn btn-primary" id="buttonAddNews">Crear Noticia</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal para mostrar noticias -->
+    <div class="modal fade" id="showNewsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalTitle"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Scripts de Bootstrap 5.3.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
